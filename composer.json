@@ -1,0 +1,30 @@
+{
+  "name": "tecnodesignc/stylist",
+  "description": "Laravel 8 theming package.",
+  "authors": [
+    {
+      "name": "Marcos Rativa",
+      "email": "marcos21.009@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "laravelcollective/html": "6.*",
+    "illuminate/support": "^6.0|^7.0|^8.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~1.0",
+    "orchestra/testbench": "^5.0|^6.0",
+    "phpunit/phpunit": "~7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tecnodesignc\\Stylist\\": "src/Stylist",
+      "Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "config": {
+    "preferred-install": "dist"
+  }
+}
