@@ -2,7 +2,7 @@
 namespace Tests\Theme;
 
 use Tecnodesignc\Stylist\Theme\Json;
-
+use Tecnodesignc\Stylist\Theme\Exceptions\ThemeJsonNotFoundException;
 class JsonTest extends \Tests\TestCase
 {
     private $themeJson;
@@ -32,6 +32,8 @@ class JsonTest extends \Tests\TestCase
      */
     public function testThemeFileMissing()
     {
+        $this->expectException(ThemeJsonNotFoundException::class);
+
         $json = new Json('path/that/doesnt/exist');
 
         $json->getJson();

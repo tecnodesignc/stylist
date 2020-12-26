@@ -4,6 +4,7 @@ namespace Tests\Theme;
 use Tecnodesignc\Stylist\Theme\Loader;
 use Tecnodesignc\Stylist\Theme\Stylist;
 use Tecnodesignc\Stylist\Theme\Theme;
+use Tecnodesignc\Stylist\Theme\Exceptions\ThemeNotFoundException;
 
 class StylistTest extends \Tests\TestCase
 {
@@ -70,6 +71,7 @@ class StylistTest extends \Tests\TestCase
      */
     public function testInvalidTheme()
     {
+        $this->expectException(ThemeNotFoundException::class);
         $stylist = new Stylist(new Loader, $this->app);
         $stylist->get('invalidtheme');
     }
