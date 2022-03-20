@@ -1,6 +1,6 @@
 {
   "name": "tecnodesignc/stylist",
-  "description": "Laravel 8 theming package.",
+  "description": "Laravel 9 theming package.",
   "authors": [
     {
       "name": "Marcos Rativa",
@@ -8,9 +8,9 @@
     }
   ],
   "require": {
-    "php": "^7.1",
+    "php": "^8.0|^8.1",
     "illuminate/support": "^6.0|^7.0|^8.0",
-    "laravel/framework": "^6.0|^7.0|^8.0",
+    "laravel/framework": "^9.2",
     "laravelcollective/html": "^6.0|^7.0"
   },
   "require-dev": {
